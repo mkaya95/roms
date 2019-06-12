@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ROMS</string>
+    <string name="overview">Restaurant Overview</string>
+
+    <string name="app_settings">Application Settings</string>
+    <string name="label_restaurant_name">Restaurant Name</string>
+    <string name="label_table_rows">Table Rows</string>
+    <string name="label_table_cols">Table Cols</string>
+    <string name="label_save">Save</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="registration_button">Register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+    <string name="no_text"> </string>
+    <string name="registration_message">You are not registered yet.</string>
+    <string name="registration_failed">Your email or password is already in use</string>
+
+
+</resources>

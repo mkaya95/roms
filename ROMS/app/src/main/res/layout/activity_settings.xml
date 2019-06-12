@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+    <EditText
+        android:id="@+id/editText_table_rows"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="4"
+        android:ems="10"
+        android:hint="@string/label_table_rows"
+        android:inputType="number"
+        android:text="@string/label_table_rows"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editText_restaurant_name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_restaurant_name" />
+
+    <TextView
+        android:id="@+id/textView_table_rows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/label_table_cols"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_table_cols"
+        app:layout_constraintEnd_toStartOf="@+id/editText_table_cols"
+        app:layout_constraintTop_toTopOf="@+id/editText_table_cols"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <EditText
+        android:id="@+id/editText_table_cols"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="4"
+        android:ems="10"
+        android:hint="@string/label_table_cols"
+        android:inputType="number"
+        android:text="@string/label_table_cols"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_restaurant_name"
+        app:layout_constraintTop_toBottomOf="@+id/editText_table_rows" />
+
+    <TextView
+        android:id="@+id/textView_table_rows2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/label_table_rows"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_table_rows"
+        app:layout_constraintEnd_toStartOf="@+id/editText_table_rows"
+        app:layout_constraintTop_toTopOf="@+id/editText_table_rows" />
+
+    <TextView
+        android:id="@+id/textView_app_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/app_settings"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/label_restaurant_name"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_restaurant_name"
+        app:layout_constraintEnd_toStartOf="@+id/editText_restaurant_name"
+        app:layout_constraintTop_toTopOf="@+id/editText_restaurant_name" />
+
+    <EditText
+        android:id="@+id/editText_restaurant_name"
+        android:layout_width="246dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/label_restaurant_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_app_settings" />
+
+    <Button
+        android:id="@+id/button_save_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="saveSettings"
+        android:text="@string/label_save"
+        app:layout_constraintEnd_toEndOf="@+id/editText_table_cols"
+        app:layout_constraintTop_toBottomOf="@+id/editText_table_cols" />
+</android.support.constraint.ConstraintLayout>
